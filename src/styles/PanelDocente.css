@@ -1,0 +1,19 @@
+.encabezado{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+}
+
+.encabezado button{
+background-color:#d32f2f;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.encabezado button:hover{
+background-color:#b71c1c;
+}

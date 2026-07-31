@@ -1,0 +1,231 @@
+.informacion-institucion{
+
+    max-width:1200px;
+    margin:auto;
+    padding:25px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+/*========================
+ ENCABEZADO
+=========================*/
+
+.encabezado-institucion{
+
+    background:rgb(15, 56, 2);
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+    margin-bottom:35px;
+
+}
+
+.informacion-institucion h1{
+
+    text-align:center;
+    color:#f8f8f8;
+    font-size:40px;
+    margin-bottom:10px;
+
+}
+
+.informacion-institucion h2{
+
+    color:#ffffff;
+    margin-top:30px;
+    border-left:6px solid #949694;
+    padding-left:12px;
+
+}
+
+.informacion-institucion h3{
+
+    color:#faf9f9;
+    margin-top:8px;
+    margin-bottom:20px;
+
+}
+
+.informacion-institucion p{
+
+    color:#fffdfd;
+    line-height:1.8;
+
+}
+
+.informacion-institucion hr{
+
+    margin:30px 0;
+    border:none;
+    border-top:1px solid #000000;
+
+}
+
+/*========================
+ FUNDADORES
+=========================*/
+
+.titulo-fundadores{
+
+    text-align:center;
+    margin:40px 0;
+
+}
+
+.titulo-fundadores h2{
+
+    border:none;
+    padding:0;
+
+}
+
+.titulo-fundadores p{
+
+    color:#c5b8b8;
+
+}
+
+.contenedor-fundadores{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:22px;
+
+}
+
+.tarjeta-fundador{
+
+    background:rgb(0, 0, 0);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 18px rgba(4, 27, 2, 0.608);
+
+    transition:.35s;
+
+    text-align:center;
+
+}
+
+.tarjeta-fundador:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.18);
+
+}
+
+.tarjeta-fundador img{
+
+    width:100%;
+
+    height:210px;
+
+    object-fit:cover;
+
+}
+
+.tarjeta-fundador h3{
+
+    color:#fbfffc;
+
+    font-size:20px;
+
+    margin-top:15px;
+
+}
+
+.tarjeta-fundador p{
+
+    margin:8px 15px;
+
+    font-size:15px;
+
+}
+
+.tarjeta-fundador hr{
+
+    margin:18px;
+
+}
+
+/*========================
+ RESPONSIVE
+=========================*/
+
+@media(max-width:900px){
+
+.encabezado-institucion{
+
+padding:25px;
+
+}
+
+.informacion-institucion h1{
+
+font-size:34px;
+
+}
+
+}
+
+@media(max-width:700px){
+
+.informacion-institucion{
+
+padding:15px;
+
+}
+
+.encabezado-institucion{
+
+padding:20px;
+
+}
+
+.informacion-institucion h1{
+
+font-size:28px;
+
+}
+
+.informacion-institucion h2{
+
+font-size:22px;
+
+}
+
+.contenedor-fundadores{
+
+grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+
+gap:15px;
+
+}
+
+.tarjeta-fundador img{
+
+height:170px;
+
+}
+
+.tarjeta-fundador h3{
+
+font-size:18px;
+
+}
+
+.tarjeta-fundador p{
+
+font-size:14px;
+
+}
+
+}

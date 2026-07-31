@@ -1,0 +1,168 @@
+.crear-docente{
+
+    width:95%;
+    max-width:450px;
+    margin:130px auto;
+    background:#529b0485;
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0, 0, 0, 0.462);
+
+}
+
+.crear-docente h1{
+
+    text-align:center;
+    color:#fffcfc;
+    margin-bottom:30px;
+    font-size:35px;
+
+}
+
+.crear-docente h3{
+
+    margin-top:35px;
+    margin-bottom:15px;
+    color:#f9f5f5;
+    border-left:5px solid #000000;
+    padding-left:10px;
+
+}
+
+.crear-docente input,
+.crear-docente select,
+.crear-docente textarea{
+
+    width:100%;
+    padding:10px;
+    margin-bottom:8px;
+    border:1px solid #00000000;
+    border-radius:10px;
+    font-size:15px;
+    box-sizing:border-box;
+    transition:.3s;
+    background:rgba(8, 8, 8, 0.686);
+
+}
+
+.crear-docente input:focus,
+.crear-docente textarea:focus,
+.crear-docente select:focus{
+
+    outline:none;
+    border-color:#011402;
+    box-shadow:0 0 8px rgba(0, 0, 0, 0.25);
+
+}
+
+.crear-docente textarea{
+
+    min-height:120px;
+    resize:vertical;
+
+}
+
+.crear-docente label{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:12px;
+    font-size:16px;
+    cursor:pointer;
+
+}
+
+.crear-docente label input{
+
+    width:20px;
+    height:20px;
+    margin:0;
+
+}
+
+.crear-docente hr{
+
+    margin:30px 0;
+    border:none;
+    border-top:1px solid #fffcfc;
+
+}
+
+.crear-docente button{
+
+    width:50%;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    background:#f9fff9;
+    color:rgb(1, 129, 11);
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+    margin-top:20px;
+
+}
+
+.crear-docente button:hover{
+
+    background:#03fe13;
+    transform:translateY(-2px);
+
+}
+
+.crear-docente button:active{
+
+    transform:scale(.98);
+
+}
+
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.crear-docente{
+
+    width:94%;
+    padding:20px;
+    margin:20px auto;
+
+}
+
+.crear-docente h1{
+
+    font-size:28px;
+
+}
+
+.crear-docente h3{
+
+    font-size:20px;
+
+}
+
+.crear-docente input,
+.crear-docente textarea,
+.crear-docente select{
+
+    font-size:15px;
+    padding:13px;
+
+}
+
+.crear-docente label{
+
+    font-size:15px;
+    align-items:flex-start;
+
+}
+
+.crear-docente button{
+
+    font-size:17px;
+
+}
+
+}

@@ -1,0 +1,76 @@
+/*==========================
+BUSCADOR
+==========================*/
+.buscador{
+position:relative;
+display:flex;
+align-items:center;
+}
+
+/* Botón lupa */
+.boton-buscador{
+width:34px;
+height:34px;
+border:none;
+border-radius:50%;
+background:#3c02025a;
+color:white;
+cursor:pointer;
+font-size:17px;
+transition:.3s;
+}
+
+.boton-buscador:hover{
+background:#5d0303;
+}
+
+/* Panel */
+.panel-buscador{
+position:absolute;
+top:45px;
+right:0;
+width:0;
+opacity:0;
+overflow:hidden;
+transition:.35s;
+z-index:99999;
+}
+
+/* Cuando está abierto */
+.panel-buscador.activo{
+width:300px;
+opacity:1;
+}
+
+.panel-buscador input{
+width:100%;
+padding:12px 18px;
+border:none;
+border-radius:30px;
+outline:none;
+font-size:15px;
+background:white;
+box-shadow:0 5px 18px rgba(0,0,0,.25);
+}
+
+@media (max-width:768px){
+.panel-buscador{
+right:-5px;
+}
+
+.panel-buscador.activo{
+width:180px;
+}
+
+.panel-buscador input{
+padding:10px 14px;
+font-size:13px;
+}
+
+.boton-buscador{
+width:28px;
+height:28px;
+font-size:14px;
+}
+
+}

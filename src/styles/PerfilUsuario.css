@@ -1,0 +1,401 @@
+/* =====================================================
+   PERFIL DE USUARIO
+   ===================================================== */
+.perfil-usuario {
+  width: min(600px, calc(100% - 40px));
+  margin: 70px auto 80px;
+  padding: 125px;
+  background: #56bc0d86;
+  border-radius: 25px;
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.421);
+  border: 0px solid #e5e7eb;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* =====================================================
+   TÍTULO
+   ===================================================== */
+.perfil-usuario h1 {
+  margin: 0 0 30px;
+  font-size: 34px;
+  font-weight: 700;
+  color: #f4f4f4;
+}
+
+.perfil-usuario h1::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 15px auto 0;
+  border-radius: 20px;
+  background: #000000;
+}
+
+/* =====================================================
+   FOTO DE PERFIL
+   ===================================================== */
+.perfil-usuario img {
+  display: block;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 20px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #000000fe;
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.345);
+}
+
+
+/* Avatar cuando no hay foto */
+.perfil-usuario > div > div {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #5a5a5a;
+  font-size: 70px;
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* =====================================================
+   NOMBRE
+   ===================================================== */
+.perfil-usuario h2 {
+  margin: 10px 0;
+  font-size: 28px;
+  color: #f6f9ff;
+}
+
+/* =====================================================
+   INFORMACIÓN
+   ==================================================== */
+.perfil-usuario p {
+  margin: 10px auto;
+  max-width: 650px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fffdfdc6;
+}
+
+/* ====================================================
+   CAMPOS DE EDICIÓN
+   ===================================================== */
+.perfil-usuario input,
+.perfil-usuario textarea {
+  width: min(600px, 100%);
+  box-sizing: border-box;
+  display: block;
+  margin: 12px auto;
+  padding: 13px 15px;
+  border: 1px solid #0361f900;
+  border-radius: 12px;
+  background: #b3b3b4;
+  color: #000000dd;
+  font-family: inherit;
+  font-size: 15px;
+  outline: none;
+  transition: 0.25s ease;
+}
+
+
+.perfil-usuario input:focus,
+.perfil-usuario textarea:focus {
+  background: #ffffff;
+  border-color: #090c110c;
+  box-shadow:
+    0 0 0 4px rgba(37, 99, 235, 0.10);
+}
+
+
+.perfil-usuario textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+/* =====================================================
+   INPUT DE ARCHIVO
+   ===================================================== */
+.perfil-usuario input[type="file"] {
+  padding: 10px;
+  background: #ffffffc7;
+  cursor: pointer;
+}
+
+/* ====================================================
+   BOTONES
+   ===================================================== */
+.perfil-usuario button {
+  margin: 8px 5px;
+  padding: 11px 18px;
+  border: none;
+  border-radius: 11px;
+  background: #0d2a69;
+  color: rgb(255, 253, 253);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.perfil-usuario button:hover {
+  background: #000000;
+  transform: translateY(-2px);
+  box-shadow:
+    0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+.perfil-usuario button:active {
+  transform: scale(0.97);
+
+  box-shadow: none;
+}
+
+
+/* =====================================================
+   BOTÓN CAMBIAR FOTO
+   ===================================================== */
+
+.perfil-usuario button:first-of-type {
+  background: #059669;
+}
+
+
+.perfil-usuario button:first-of-type:hover {
+  background: #047857;
+}
+
+
+/* =====================================================
+   BOTÓN CAMBIAR CONTRASEÑA
+   ===================================================== */
+
+.perfil-usuario button:nth-of-type(3) {
+  background: #7c3aed;
+}
+
+
+.perfil-usuario button:nth-of-type(3):hover {
+  background: #6d28d9;
+}
+
+
+/* =====================================================
+   BOTÓN GUARDAR
+   ===================================================== */
+
+.perfil-usuario button:last-child {
+  background: #16a34a;
+}
+
+
+.perfil-usuario button:last-child:hover {
+  background: #15803d;
+}
+
+
+/* =====================================================
+   SECCIÓN CAMBIO DE CONTRASEÑA
+   ===================================================== */
+
+.perfil-usuario input[type="password"] {
+  background: #f8fafc;
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+  .perfil-usuario {
+    width: calc(100% - 30px);
+
+    margin-top: 50px;
+
+    padding: 30px 25px;
+
+    border-radius: 22px;
+  }
+
+
+  .perfil-usuario h1 {
+    font-size: 30px;
+  }
+
+
+  .perfil-usuario img,
+  .perfil-usuario > div > div {
+    width: 160px;
+    height: 160px;
+  }
+
+
+  .perfil-usuario h2 {
+    font-size: 25px;
+  }
+
+}
+
+
+/* =====================================================
+   REDMI NOTE 12 / CELULARES
+   ===================================================== */
+
+@media (max-width: 480px) {
+
+  .perfil-usuario {
+    width: calc(100% - 20px);
+
+    margin: 30px auto 50px;
+
+    padding: 25px 16px;
+
+    border-radius: 18px;
+
+    box-shadow:
+      0 8px 25px rgba(0, 0, 0, 0.10);
+  }
+
+
+  /* Título */
+
+  .perfil-usuario h1 {
+    font-size: 25px;
+
+    margin-bottom: 25px;
+  }
+
+
+  .perfil-usuario h1::after {
+    width: 55px;
+
+    height: 3px;
+  }
+
+
+  /* Foto */
+
+  .perfil-usuario img,
+  .perfil-usuario > div > div {
+    width: 135px;
+    height: 135px;
+  }
+
+
+  /* Avatar */
+
+  .perfil-usuario > div > div {
+    font-size: 55px;
+  }
+
+
+  /* Nombre */
+
+  .perfil-usuario h2 {
+    font-size: 22px;
+
+    word-break: break-word;
+  }
+
+
+  /* Información */
+
+  .perfil-usuario p {
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    word-break: break-word;
+  }
+
+
+  /* Inputs */
+
+  .perfil-usuario input,
+  .perfil-usuario textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    font-size: 14px;
+
+    border-radius: 10px;
+  }
+
+
+  /* Botones */
+
+  .perfil-usuario button {
+    width: 100%;
+
+    margin: 6px 0;
+
+    padding: 12px 10px;
+
+    font-size: 14px;
+
+    border-radius: 10px;
+  }
+
+
+  /* Archivo */
+
+  .perfil-usuario input[type="file"] {
+    font-size: 12px;
+
+    padding: 9px;
+  }
+
+}
+
+
+/* =====================================================
+   CELULARES MUY PEQUEÑOS
+   ===================================================== */
+
+@media (max-width: 360px) {
+
+  .perfil-usuario {
+    width: calc(100% - 14px);
+
+    padding: 20px 12px;
+  }
+
+
+  .perfil-usuario h1 {
+    font-size: 22px;
+  }
+
+
+  .perfil-usuario img,
+  .perfil-usuario > div > div {
+    width: 120px;
+    height: 120px;
+  }
+
+
+  .perfil-usuario h2 {
+    font-size: 20px;
+  }
+
+
+  .perfil-usuario button {
+    font-size: 13px;
+  }
+
+}

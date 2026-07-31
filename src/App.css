@@ -1,0 +1,80 @@
+.hero{
+position:relative;
+height:500px;
+overflow:hidden;
+}
+
+.hero img{
+width:100%;
+height:500px;
+object-fit:cover;
+display:block;
+}
+
+.accesos{
+padding:50px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.caja{
+background:rgb(88, 86, 86);
+padding:30px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 0 15px rgba(32, 29, 29, 0.862);
+transition:0.4s;
+display:flex;
+flex-direction:column;
+align-items:center;
+cursor: pointer;
+}
+
+
+
+.caja:hover{
+transform:translateY(-20px);
+}
+
+.nosotros{
+padding:60px;
+text-align:center;
+}
+
+.nosotros p{
+max-width:900px;
+margin:auto;
+font-size:20px;
+line-height:35px;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+overflow-x:hidden;
+}
+
+body{
+margin:0;
+background: linear-gradient(
+135deg,
+#d85d5d,
+#318c2fad,
+#723b6a,
+#900505
+);
+font-family:Arial, Helvetica, sans-serif;
+overflow-x:hidden;
+}
+
+.contenido-pagina{
+padding-top:140px;
+}
+.feed-inicio{
+    padding-top: 70px;
+}

@@ -1,0 +1,83 @@
+.login-docente{
+display:flex;
+flex-direction:column;
+gap:18px;
+width:500px;
+margin:auto;
+margin-top:90px;
+padding:40px;
+background:#8e8b8b92;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+box-sizing:border-box;
+}
+
+.login-docente h1{
+text-align:center;
+color:#f9fbff;
+font-size:32px;
+margin-bottom:10px;
+}
+
+.login-docente input{
+padding:14px;
+font-size:16px;
+border:1px solid #dcdcdc;
+border-radius:10px;
+outline:none;
+transition:.3s;
+}
+
+.login-docente input:focus{
+border-color:#0b5ed7;
+box-shadow:0 0 8px rgba(11,94,215,.2);
+}
+
+.login-docente button{
+padding:14px;
+font-size:16px;
+font-weight:bold;
+background:#198754;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+.login-docente button:hover{
+background:#157347;
+transform:translateY(-2px);
+}
+
+.login-docente button:active{
+transform:scale(.98);
+}
+
+/* ==========================
+   CELULARES
+========================== */
+
+@media (max-width:768px){
+
+.login-docente{
+width:92%;
+margin-top:40px;
+padding:25px;
+}
+
+.login-docente h1{
+font-size:26px;
+}
+
+.login-docente input{
+font-size:15px;
+padding:13px;
+}
+
+.login-docente button{
+font-size:16px;
+padding:13px;
+}
+
+}

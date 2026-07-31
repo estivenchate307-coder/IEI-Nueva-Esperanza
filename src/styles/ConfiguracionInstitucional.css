@@ -1,0 +1,230 @@
+.pagina-configuracion{
+min-height:100vh;
+background:#f3f6fb;
+padding:120px 20px 50px;
+display:flex;
+justify-content:center;
+align-items:flex-start;
+}
+
+.pagina-configuracion .modal-configuracion{
+position:static !important;
+transform:none !important;
+width:100%;
+max-width:1100px;
+background:white;
+border-radius:20px;
+padding:35px;
+box-shadow:0 15px 40px rgba(0,0,0,.15);
+overflow:hidden;
+animation:aparecer .3s ease;
+}
+
+.pagina-configuracion .contenido-configuracion{
+max-height:none !important;
+overflow:visible !important;
+}
+
+.pagina-configuracion h1{
+font-size:38px;
+margin-bottom:25px;
+color:#1d3557;
+text-align:center;
+}
+
+.pagina-configuracion h2{
+margin-top:25px;
+margin-bottom:10px;
+color:#198754;
+font-size:28px;
+}
+
+.pagina-configuracion h3{
+margin-top:20px;
+color:#444;
+}
+
+.pagina-configuracion input,
+.pagina-configuracion textarea,
+.pagina-configuracion select{
+
+width:100%;
+padding:12px;
+border:1px solid #d6d6d6;
+border-radius:10px;
+font-size:16px;
+margin-top:8px;
+margin-bottom:15px;
+transition:.2s;
+box-sizing:border-box;
+}
+
+.pagina-configuracion input:focus,
+.pagina-configuracion textarea:focus,
+.pagina-configuracion select:focus{
+
+outline:none;
+border-color:#198754;
+box-shadow:0 0 10px rgba(25,135,84,.25);
+}
+
+.pagina-configuracion textarea{
+resize:vertical;
+min-height:120px;
+}
+
+.pagina-configuracion button{
+background:#198754;
+color:white;
+border:none;
+padding:12px 22px;
+border-radius:10px;
+font-size:16px;
+cursor:pointer;
+transition:.25s;
+margin-top:10px;
+}
+
+.pagina-configuracion button:hover{
+background:#146c43;
+transform:translateY(-2px);
+}
+
+.pagina-configuracion img{
+max-width:220px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+margin:15px 0;
+}
+
+@keyframes aparecer{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+@media(max-width:768px){
+.pagina-configuracion{
+padding:95px 12px 40px;
+}
+
+.pagina-configuracion .modal-configuracion{
+padding:20px;
+}
+
+.pagina-configuracion h1{
+font-size:28px;
+}
+
+.pagina-configuracion h2{
+font-size:22px;
+}
+
+}
+
+/* ---------- CONTENEDOR ---------- */
+
+.contenedor-configuracion{
+width:100%;
+background:white;
+border-radius:20px;
+padding:35px;
+box-shadow:0 10px 35px rgba(0,0,0,.15);
+}
+
+/* ---------- TITULO ---------- */
+.titulo-configuracion{
+text-align:center;
+font-size:36px;
+margin-bottom:35px;
+color:#1d3557;
+}
+
+/* ---------- MENU ---------- */
+.menu-configuracion{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+margin-bottom:35px;
+}
+
+.menu-configuracion button{
+background:#198754;
+color:white;
+border:none;
+padding:12px 22px;
+border-radius:12px;
+cursor:pointer;
+font-size:16px;
+font-weight:600;
+transition:.25s;
+box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+.menu-configuracion button:hover{
+background:#146c43;
+transform:translateY(-3px);
+}
+
+/* ---------- SECCIONES ---------- */
+.contenedor-configuracion h2{
+margin-top:20px;
+color:#198754;
+font-size:28px;
+}
+
+.contenedor-configuracion h3{
+margin-top:18px;
+margin-bottom:8px;
+color:#333;
+}
+
+/* ---------- INPUTS ---------- */
+.contenedor-configuracion input,
+.contenedor-configuracion textarea,
+.contenedor-configuracion select{
+width:100%;
+padding:12px;
+border-radius:10px;
+border:1px solid #ccc;
+font-size:16px;
+margin-top:8px;
+margin-bottom:15px;
+box-sizing:border-box;
+transition:.2s;
+}
+.contenedor-configuracion input:focus,
+.contenedor-configuracion textarea:focus,
+.contenedor-configuracion select:focus{
+outline:none;
+border-color:#198754;
+box-shadow:0 0 10px rgba(25,135,84,.2);
+}
+
+/* ---------- BOTONES ---------- */
+.contenedor-configuracion button{
+margin:5px;
+}
+
+/* ---------- IMAGENES ---------- */
+.contenedor-configuracion img{
+border-radius:12px;
+box-shadow:0 6px 15px rgba(0,0,0,.2);
+margin-top:10px;
+margin-bottom:15px;
+}
+
+/* ---------- LINEAS ---------- */
+.contenedor-configuracion hr{
+margin:25px 0;
+border:none;
+border-top:1px solid #ddd;
+}

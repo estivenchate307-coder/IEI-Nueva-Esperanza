@@ -1,0 +1,121 @@
+@media (max-width:768px){
+
+.navbar-superior{
+
+padding:1px 1px;
+
+}
+
+/* Logo */
+
+.logo{
+
+width:35px;
+
+height:35px;
+
+}
+
+/* Nombre institución */
+
+.info-institucion h2{
+
+font-size:9px;
+
+letter-spacing:0;
+
+}
+
+.info-institucion p{
+
+font-size:0px;
+
+}
+
+/* Usuario */
+
+.foto-mini{
+
+width:28px;
+
+height:28px;
+
+}
+
+.foto-vacia{
+
+width:28px;
+
+height:28px;
+
+font-size:1px;
+
+}
+
+.datos-mini strong{
+
+font-size:1px;
+
+}
+
+.datos-mini p{
+
+font-size:8px;
+
+}
+
+/* Menú */
+
+.menu{
+
+gap:4px;
+
+padding:1px;
+
+}
+
+.menu a{
+
+font-size:8px;
+
+padding:1px 5px;
+
+}
+
+/* Buscador */
+
+.buscador-navbar{
+
+right:5px;
+
+}
+
+.buscador input{
+
+width:24px;
+
+height:24px;
+
+font-size:10px;
+
+padding:0 6px;
+
+}
+
+.buscador input:focus{
+
+width:95px;
+
+}
+
+/* Botón menú */
+
+.boton-menu{
+
+font-size:15px;
+
+padding:2px;
+
+}
+
+}

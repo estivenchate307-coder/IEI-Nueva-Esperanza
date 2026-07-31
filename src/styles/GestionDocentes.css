@@ -1,0 +1,62 @@
+.gestion-docentes{
+
+    width:95%;
+    max-width:1300px;
+    margin:auto;
+    padding:25px 15px;
+
+}
+
+.gestion-docentes h1{
+
+    text-align:center;
+    color:#1b5e20;
+    margin-bottom:20px;
+    font-size:38px;
+
+}
+
+.gestion-docentes h2{
+
+    margin-top:35px;
+    margin-bottom:20px;
+    color:#2e7d32;
+    border-left:6px solid #2e7d32;
+    padding-left:12px;
+
+}
+
+.gestion-docentes hr{
+
+    margin:30px 0;
+    border:none;
+    border-top:2px solid #ddd;
+
+}
+
+.lista-docentes{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:25px;
+
+}
+
+@media(max-width:768px){
+.gestion-docentes{
+padding:15px;
+}
+
+.gestion-docentes h1{
+font-size:30px;
+}
+
+.gestion-docentes h2{
+font-size:22px;
+}
+
+.lista-docentes{
+grid-template-columns:1fr;
+gap:18px;
+}
+}

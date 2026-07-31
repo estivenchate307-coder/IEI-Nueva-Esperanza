@@ -1,0 +1,129 @@
+.usuario-contenedor {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-usuario {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 230px;
+  background: rgba(147, 71, 71, 0);
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  box-shadow: 0 5px 20px rgba(23, 21, 21, 0);
+  z-index: 99999;
+
+}
+.boton-usuario {
+  position: relative;
+  z-index: 100000;
+}
+/* =========================================
+   ADAPTACIÓN PARA CELULARES
+   ========================================= */
+@media (max-width: 768px) {
+  .usuario-contenedor {
+    position: relative;
+    display: inline-block;
+  }
+
+  .menu-usuario {
+    width: 210px;
+    right: -10px;
+    padding: 13px;
+    border-radius: 17px;
+    gap: 4px;
+    box-shadow: 0 5px 18px rgba(23, 21, 21, 0.75);
+  }
+
+  .boton-usuario {
+    position: relative;
+    z-index: 100000;
+  }
+}
+/* =========================================
+   CELULARES PEQUEÑOS
+   ========================================= */
+@media (max-width: 480px) {
+
+  .usuario-contenedor {
+    position: relative;
+  }
+
+  .menu-usuario {
+    width: 140px;
+    right: -5px;
+    padding: 10px;
+    border-radius: 15px;
+    gap: 3px;
+  }
+
+  .boton-usuario {
+    z-index: 100000;
+  }
+}
+/* =========================================
+   BOTONES DEL MENÚ DESPLEGABLE DE USUARIO
+   ========================================= */
+.menu-usuario button {
+  width: 100%;
+  min-height: 34px;
+  padding: 6px 10px;
+  border: 1px solid rgba(29, 19, 19, 0.051);
+  border-radius: 8px;
+  background: rgb(59, 103, 50);
+  color: rgb(240, 240, 240);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* =========================================
+   EFECTO AL PASAR EL CURSOR
+   ======================================== */
+.menu-usuario button:hover {
+  background: rgba(23, 11, 11, 0.703);
+  border-color: rgba(44, 42, 42, 0.67);
+  transform: translateX(2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.503);
+}
+
+/* =========================================
+   EFECTO AL PRESIONAR
+   ========================================= */
+.menu-usuario button:active {
+  transform: scale(0.97);
+}
+
+
+/* =========================================
+   BOTÓN "CERRAR SESIÓN"
+   ========================================= */
+.menu-usuario button:last-child {
+  background: rgba(0, 0, 0, 0.889);
+  border-color: rgba(255, 120, 233, 0);
+}
+
+.menu-usuario button:last-child:hover {
+  background: rgba(84, 83, 83, 0.95);
+  border-color: rgba(0, 0, 0, 0.158);
+}
+@media (max-width: 480px) {
+
+  .menu-usuario button {
+    min-height: 5px;
+    padding: 5px 1px;
+    font-size: 8px;
+    border-radius: 10px;
+  }
+
+}

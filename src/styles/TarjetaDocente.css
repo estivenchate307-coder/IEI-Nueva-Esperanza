@@ -1,0 +1,106 @@
+.tarjeta-docente{
+    background:#ffffff;
+    border-radius:18px;
+    padding:20px;
+    margin:20px auto;
+    max-width:420px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    transition:.3s;
+    border:1px solid #e5e5e5;
+}
+
+.tarjeta-docente:hover{
+    transform:translateY(-4px);
+    box-shadow:0 12px 28px rgba(0,0,0,.18);
+}
+
+.tarjeta-docente img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:0 auto 15px;
+    border:4px solid #2e7d32;
+}
+
+.tarjeta-docente div:first-child{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:#f0f0f0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:55px;
+    margin:0 auto 15px;
+}
+
+.tarjeta-docente h3{
+    text-align:center;
+    color:#1b5e20;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.tarjeta-docente p{
+    margin:8px 0;
+    color:#444;
+    line-height:1.5;
+    word-break:break-word;
+}
+
+.tarjeta-docente hr{
+    margin:18px 0;
+    border:none;
+    border-top:1px solid #ddd;
+}
+
+.tarjeta-docente button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.tarjeta-docente button:hover{
+    transform:scale(1.03);
+}
+
+.tarjeta-docente button:active{
+    transform:scale(.98);
+}
+
+.tarjeta-docente button{
+    background:#1976d2;
+    color:white;
+}
+
+.tarjeta-docente button:hover{
+    background:#1565c0;
+}
+
+@media(max-width:768px){
+
+.tarjeta-docente{
+    margin:15px;
+    padding:18px;
+}
+
+.tarjeta-docente h3{
+    font-size:22px;
+}
+
+.tarjeta-docente p{
+    font-size:15px;
+}
+
+.tarjeta-docente button{
+    font-size:15px;
+}
+
+}
