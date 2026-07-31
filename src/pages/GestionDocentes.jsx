@@ -90,7 +90,7 @@ return(
 
 {
 docentes
-.filter((docente)=>docente.estado==="Activo")
+.filter((docente)=>docente.estado?.toLowerCase()==="activo")
 .map((docente)=>(
 
 <TarjetaDocente
@@ -110,7 +110,7 @@ cargarDocentes={cargarDocentes}
 
 {
 docentes
-.filter((docente)=>docente.estado==="Inactivo")
+.filter((docente)=>docente.estado?.toLowerCase()==="inactivo")
 .map((docente)=>(
 
 <TarjetaDocente

@@ -45,7 +45,9 @@ return;
 }
 
 const datos = documento.data();
-
+console.log("Datos del docente:", datos);
+console.log("Estado:", `"${datos.estado}"`);
+console.log("Rol:", datos.rol);
 if(datos.rol !== "docente"){
 
 alert("Esta cuenta no pertenece a un docente.");
@@ -56,7 +58,7 @@ return;
 
 }
 
-if(datos.estado !== "Activo"){
+if(datos.estado.toLowerCase() !== "activo"){
 
 alert(
 

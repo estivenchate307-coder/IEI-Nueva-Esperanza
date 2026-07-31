@@ -6,11 +6,11 @@ function Deportes(){
 return(
 
 <>
-<div className="contenedor-feed">
+
 <Navbar/>
 
 <Galeria categoria="Deportes"/>
-</div>
+
 </>
 
 )
