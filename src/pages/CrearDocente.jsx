@@ -198,7 +198,7 @@ onChange={(e)=>setCargo(e.target.value)}/>
 <input placeholder="Teléfono"
 onChange={(e)=>setTelefono(e.target.value)}/>
 
-<input placeholder="Descripción"
+<input placeholder="Profesiones"
 onChange={(e)=>setDescripcion(e.target.value)}/>
 
 <input placeholder="Fecha ingreso"
