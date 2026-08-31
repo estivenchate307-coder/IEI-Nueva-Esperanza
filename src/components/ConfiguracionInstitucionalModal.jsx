@@ -58,7 +58,7 @@ correo:"",
 
 facebook:"",
 
-instagram:"",
+tiktok:"",
 
 youtube:"",
 
@@ -1200,7 +1200,7 @@ Configura las redes oficiales de la institución.
 
 <h3>
 
-📘 Facebook
+Facebook
 
 </h3>
 
@@ -1222,21 +1222,20 @@ placeholder="https://facebook.com/..."
 
 <h3>
 
-📸 Instagram
-
+Tik Tok
 </h3>
 
 <input
 
 type="text"
 
-name="instagram"
+name="tiktok"
 
-value={datos.instagram}
+value={datos.tiktok}
 
 onChange={cambiarDato}
 
-placeholder="https://instagram.com/..."
+placeholder="https://tiktok.com/..."
 
 />
 

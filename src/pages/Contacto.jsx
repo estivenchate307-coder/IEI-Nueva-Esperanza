@@ -189,49 +189,58 @@ return(
 
 <h2>
 
-🌐 Redes Sociales
+Redes Sociales
 
 </h2>
 
 <p>
 
-📘 Facebook
+Facebook
 
 </p>
-
-<p>
-
-{datos.facebook}
-
-</p>
+<div className="facebook">
+<a
+  href={datos.facebook}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  IEICS Nueva Esperanza
+</a>
+</div>
 
 <br/>
 
 <p>
 
-📸 Instagram
+Tik Tok
 
 </p>
-
-<p>
-
-{datos.instagram}
-
-</p>
+<div className="tiktok">
+<a
+  href={datos.tiktok}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  IEIC Sede Nueva Esperanza
+</a>
+</div>
 
 <br/>
 
-<p>
-
-▶ YouTube
-
-</p>
 
 <p>
-
-{datos.youtube}
-
+  YouTube
 </p>
+
+<div className="youtube">
+<a
+  href={datos.youtube}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  I.E Indígena Chimborazo Sede Nueva Esperanza
+</a>
+</div>
 
 <hr/>
 <div className="titulo-fundadores">
