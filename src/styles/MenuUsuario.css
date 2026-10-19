@@ -1,103 +1,93 @@
 
-/* =========================================
-   CONTENEDOR DEL USUARIO
-   ========================================= */
-
 .usuario-contenedor {
   position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  max-width: 100%;
+  display: inline-block;
 }
-
-/* =========================================
-   BOTÓN DEL USUARIO
-   ========================================= */
-
-.boton-usuario {
-  position: relative;
-  z-index: 100001;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 100%;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-}
-
-/* =========================================
-   MENÚ DESPLEGABLE
-   ========================================= */
 
 .menu-usuario {
   position: absolute;
-  top: calc(100% + 10px);
+  top: 100%;
   right: 0;
-
   width: 230px;
-  max-width: calc(100vw - 24px);
-  max-height: min(70vh, 500px);
-  overflow-x: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-
+  background: rgba(147, 71, 71, 0);
+  border-radius: 20px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 5px;
+  box-shadow: 0 5px 20px rgba(23, 21, 21, 0);
+  z-index: 99999;
+}
 
-  padding: 15px;
-
-  background: rgba(35, 35, 35, 0.96);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 16px;
-
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
-
+.boton-usuario {
+  position: relative;
   z-index: 100000;
-  isolation: isolate;
-
-  -webkit-overflow-scrolling: touch;
-  overscroll-behavior: contain;
 }
 
 /* =========================================
-   BOTONES DEL MENÚ
+   ADAPTACIÓN PARA CELULARES
+   ========================================= */
+
+@media (min-width: 361px) and (max-width: 480px) {
+  .usuario-contenedor {
+    position: relative;
+    display: inline-block;
+  }
+
+  .menu-usuario {
+    width: 210px;
+    right: -10px;
+    padding: 13px;
+    border-radius: 17px;
+    gap: 4px;
+    box-shadow: 0 5px 18px rgba(7, 3, 3, 0.75);
+  }
+
+  .boton-usuario {
+    position: relative;
+    z-index: 100000;
+  }
+}
+
+/* =========================================
+   CELULARES PEQUEÑOS
+   ========================================= */
+
+@media (max-width: 360px) {
+  .usuario-contenedor {
+    position: relative;
+  }
+
+  .menu-usuario {
+    width: 140px;
+    right: -5px;
+    padding: 10px;
+    border-radius: 15px;
+    gap: 3px;
+  }
+
+  .boton-usuario {
+    z-index: 100000;
+  }
+}
+
+/* =========================================
+   BOTONES DEL MENÚ DESPLEGABLE DE USUARIO
    ========================================= */
 
 .menu-usuario button {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-
   width: 100%;
-  min-width: 0;
-  min-height: 42px;
-
-  padding: 10px 12px;
-
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 9px;
-
+  min-height: 34px;
+  padding: 6px 10px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 8px;
   background: rgb(59, 103, 50);
   color: rgb(240, 240, 240);
-
-  font-family: inherit;
   font-size: 14px;
   font-weight: 600;
-  line-height: 1.35;
-  text-align: left;
-  overflow-wrap: anywhere;
-
   cursor: pointer;
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
-
   transition:
-    background-color 0.2s ease,
-    color 0.2s ease,
+    background 0.2s ease,
     transform 0.2s ease,
     border-color 0.2s ease,
     box-shadow 0.2s ease;
@@ -107,13 +97,11 @@
    EFECTO AL PASAR EL CURSOR
    ========================================= */
 
-@media (hover: hover) and (pointer: fine) {
-  .menu-usuario button:hover {
-    background: rgba(23, 11, 11, 0.85);
-    border-color: rgba(44, 42, 42, 0.85);
-    transform: translateX(2px);
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
-  }
+.menu-usuario button:hover {
+  background: rgba(23, 11, 11, 0.703);
+  border-color: rgba(44, 42, 42, 0.67);
+  transform: translateX(2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.503);
 }
 
 /* =========================================
@@ -121,118 +109,32 @@
    ========================================= */
 
 .menu-usuario button:active {
-  transform: scale(0.98);
+  transform: scale(0.97);
 }
 
 /* =========================================
-   INDICADOR DE FOCO CON TECLADO
-   ========================================= */
-
-.menu-usuario button:focus-visible,
-.boton-usuario:focus-visible {
-  outline: 2px solid rgb(240, 240, 240);
-  outline-offset: 3px;
-}
-
-/* =========================================
-   BOTÓN CERRAR SESIÓN
+   BOTÓN "CERRAR SESIÓN"
    ========================================= */
 
 .menu-usuario button:last-child {
   background: rgba(0, 0, 0, 0.889);
-  border-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 120, 233, 0);
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .menu-usuario button:last-child:hover {
-    background: rgba(84, 83, 83, 0.95);
-    border-color: rgba(255, 255, 255, 0.2);
-  }
+.menu-usuario button:last-child:hover {
+  background: rgba(84, 83, 83, 0.95);
+  border-color: rgba(0, 0, 0, 0.158);
 }
 
 /* =========================================
-   CELULARES PEQUEÑOS: HASTA 360 PX
+   BOTONES EN CELULARES
    ========================================= */
 
-@media (max-width: 360px) {
-  .menu-usuario {
-    width: 190px;
-    max-width: calc(100vw - 16px);
-    right: -4px;
-    padding: 10px;
-    gap: 6px;
-    border-radius: 13px;
-  }
-
+@media (max-width: 480px) {
   .menu-usuario button {
-    min-height: 40px;
-    padding: 9px 10px;
-    font-size: 13px;
-    border-radius: 8px;
-  }
-}
-
-/* =========================================
-   CELULARES: 361 PX A 480 PX
-   ========================================= */
-
-@media (min-width: 361px) and (max-width: 480px) {
-  .menu-usuario {
-    width: 210px;
-    max-width: calc(100vw - 20px);
-    right: -4px;
-    padding: 12px;
-    gap: 6px;
-    border-radius: 15px;
-  }
-
-  .menu-usuario button {
-    min-height: 42px;
-    padding: 10px 11px;
-    font-size: 13px;
-  }
-}
-
-/* =========================================
-   CELULARES GRANDES Y TABLETS PEQUEÑAS
-   ========================================= */
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .menu-usuario {
-    width: 220px;
-    max-width: calc(100vw - 24px);
-    padding: 13px;
-    gap: 7px;
-  }
-
-  .menu-usuario button {
-    min-height: 42px;
-    font-size: 14px;
-  }
-}
-
-/* =========================================
-   TABLETS Y PANTALLAS GRANDES
-   ========================================= */
-
-@media (min-width: 769px) {
-  .menu-usuario {
-    width: 230px;
-    padding: 15px;
-    gap: 7px;
-  }
-}
-
-/* =========================================
-   REDUCIR ANIMACIONES SI EL USUARIO LO PREFIERE
-   ========================================= */
-
-@media (prefers-reduced-motion: reduce) {
-  .menu-usuario button {
-    transition: none;
-  }
-
-  .menu-usuario button:active {
-    transform: none;
+    min-height: 5px;
+    padding: 5px 1px;
+    font-size: 8px;
+    border-radius: 10px;
   }
 }
