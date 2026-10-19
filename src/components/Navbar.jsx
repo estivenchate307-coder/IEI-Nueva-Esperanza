@@ -144,19 +144,13 @@ onClick={()=>setMenuAbierto(!menuAbierto)}
 
 <Link to="/informacion">
 
-🏛
+Acerca de
 
 </Link>
 
 </li>
 
 </ul>
-
-<div className="buscador-navbar">
-
-<Buscador/>
-
-</div>
 
 </div>
 

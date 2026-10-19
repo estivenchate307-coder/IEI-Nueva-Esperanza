@@ -5,6 +5,33 @@ import "../styles/TarjetaPublicacion.css";
 import { useState } from "react";
 import VisorPublicacion from "./VisorPublicacion";
 import DescripcionExpandible from "./DescripcionExpandible";
+
+function obtenerYoutubeEmbed(url) {
+  try {
+    const enlace = new URL(url);
+    let id = "";
+
+    if (enlace.hostname === "youtu.be") {
+      id = enlace.pathname.slice(1).split("/")[0];
+    } else if (
+      enlace.hostname === "youtube.com" ||
+      enlace.hostname.endsWith(".youtube.com")
+    ) {
+      id =
+        enlace.searchParams.get("v") ||
+        enlace.pathname.match(/\/embed\/([^/]+)/)?.[1] ||
+        enlace.pathname.match(/\/shorts\/([^/]+)/)?.[1] ||
+        "";
+    }
+
+    return id
+      ? `https://www.youtube.com/embed/${id}`
+      : "";
+  } catch {
+    return "";
+  }
+}
+
 function TarjetaPublicacion({
 
 publicacion,
@@ -218,27 +245,12 @@ className="imagen-publicacion"
 (
 
 <iframe
-
-className="youtube-publicacion"
-
-src={
-
-archivo.url
-
-.replace("watch?v=","embed/")
-
-.replace("youtu.be/","youtube.com/embed/")
-
-}
-
-title={publicacion.titulo}
-
-frameBorder="0"
-
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-
-allowFullScreen
-
+  className="youtube-publicacion"
+  src={obtenerYoutubeEmbed(archivo.url)}
+  title={publicacion.titulo}
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowFullScreen
 />
 
 )
