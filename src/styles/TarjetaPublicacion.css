@@ -190,9 +190,9 @@ transform:scale(.97);
 .tarjeta-publicacion{
 max-width:650px;
 margin:4px auto;
-background:rgba(36, 35, 35, 0.715);
+background:rgba(0, 0, 0, 0.582);
 border-radius:18px;
-box-shadow:0 4px 15px rgba(116, 114, 114, 0.951) !important;
+box-shadow:0 4px 15px rgba(2, 0, 0, 0.951) !important;
 transition:.3s;
 }
 
@@ -207,9 +207,9 @@ box-shadow:0 10px 25px rgba(0, 0, 0, 0.2);
 .encabezado-publicacion{
 display:flex;
 align-items:center;
-gap:10px ;
-padding:05px;
-border-bottom:0px solid #c928280e;
+gap:0px ;
+padding:20px;
+border-bottom:1px solid #b3b2b298;
 }
 
 /* ===========================
@@ -224,15 +224,15 @@ border:0px solid #fcf6f600;
 }
 
 .foto-publicador-vacia{
-width:25px;
-height:25px;
+width:50px;
+height:50px;
 border-radius:50%;
 background:#ffffff;
 display:flex;
 align-items:center;
 justify-content:center;
 font-size:24px;
-color:rgba(2, 0, 0, 0.267);
+color:rgba(116, 111, 111, 0.445);
 }
 
 /* ===========================
@@ -245,8 +245,8 @@ flex-direction:column;
 }
 
 .datos-publicacion strong{
-font-size:9px !important;
-color:#1a0b0b;
+font-size:15px !important;
+color:#fffefe;
 }
 
 .datos-publicacion p{
@@ -261,8 +261,8 @@ color:#eeebeba9;
 =========================== */
 
 .titulo-publicacion{
-padding:1px 25px 1px;
-font-size:12px;
+padding:10px 10px 1px;
+font-size:15px;
 color:#f4f3f3;
 text-align:left;
 }
